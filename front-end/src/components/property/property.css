@@ -1,0 +1,23 @@
+.property {
+  display: flex;
+  gap: 20px;
+}
+
+.propertyItem {
+  flex: 1;
+}
+
+.propertyImg {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.propertyTitle {
+  font-size: 18px;
+}
+
+.propertySubTitle {
+  font-size: 14px;
+  font-weight: 300;
+}

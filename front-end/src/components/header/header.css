@@ -1,0 +1,101 @@
+.header {
+  background-color: #003580;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1100px;
+  padding: 20px 0px 100px 0px;
+}
+
+.headerList {
+  display: flex;
+  gap: 40px;
+}
+
+.headerListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.headerListItem.active {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.headerHeading {
+  font-weight: 500;
+  border: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.headerSearch {
+  background-color: white;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+  border: solid 4px #febb02;
+  width: 100%;
+  max-width: 1100px;
+  position: absolute;
+  bottom: -25px;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  height: 100%;
+}
+
+.headerSearchItem input {
+  border: none;
+  outline: none;
+}
+
+.headerSearchBtn {
+  background-color: #0071c2;
+  color: white;
+  height: 100%;
+  padding: 0 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.date {
+  position: absolute;
+  top: 50px;
+  z-index: 100;
+}
+
+@media (max-width: 800px) {
+  .headerSearch {
+    height: 80%;
+    border: solid 4px #febb02;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .headerSearchItem,
+  .headerSearchBtn {
+    width: 100%;
+    margin-left: 0;
+  }
+}
